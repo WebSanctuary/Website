@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Learn how to deploy a Flask App for free. View the step by step tutorial today!">
+    <title>Host A Flask App For Free</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">WebSanctuary</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+           <li class="nav-item active">
+        <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+      </li>
+      
+<!--       <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coming Soon</a>
+      </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="jumbotron">
+  <h1 class="display-4">How To Host Your Flask App For Free!</h1>
+  <p class="lead">Today we will go over how one can deploy   their Flask app with <a href='https://www.pythonanywhere.com/'> PythonAnywhere </a>.</p>
+  <hr class="my-4">
+  <p>Click learn more to discoveirng more information about WebSanctuary.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <hr class="my-4">
+  <h1 class="display-6"> 1) Required Tools</h1>
+  <p class='lead'> Tools Needed:</p>
+  <div> </div>
+  <p> 1) A functional Flask Application</p>
+  <p> 2) An account with <a href='https://www.pythonanywhere.com/'>PythonAnywhere</a></p>
+  <hr class="my-4">
+  <h1 class="display-6"> 2) Overview of Flask App</h1>
+  <p class='lead'> The Flask Application That Will Be Hosted</p>
+  <div> </div>
+  <p style="font-size: 15px;"> (flask_app/templates/index.html) HTML Code:</p>
+  <div> </div>
+  <pre style="background-color: lightgrey; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; width: 35%;"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Flask App Tutorial &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Flask App Tutorial&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></p>
+  <p style="font-size: 15px;"> (flask_app/app.py) Python Code:</p>
+  <div> </div>
+<pre style="background-color: lightgrey; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; width: 35%;"><code>from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+  return render_template('index.html')
+
+if __name__ == "__main__":
+    app.run(debug=False)
+</code></pre></p></p>
+<div> </div>
+<p style="font-size: 15px;"> End Result:</p>
+<div> </div>
+<img src='images/first_preview.png' alt='Final Result Website'>
+  <hr class="my-4">
+<h1 class='display-6'> 3) Create a Webapp on <a href='https://www.pythonanywhere.com/'>PythonAnywhere</a></h1> 
+<p class='lead'> After creating your account, go to the "Web" tab.</p>
+<img src='images/second_preview.png' alt='How to host your Flask website for free.'>
+<div style="margin-top: 1em;"> </div>
+
+<p class='lead'> Then create your new webapp!</p>
+<img src='images/third_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<p class='lead' style="margin-top: 1em;"> You will then be prompted to create a web app. Please follow the directions carefuly. </p>
+  <hr class="my-4">
+<p class='lead'> After this, navigate to the files tab. You will notice that you see a flask_app.py file. Delte this file and then upload your own file Python file.</p>
+<div> </div>
+<img src='images/fourth_preview.png' alt='How to host your Flask website for free.'>
+<img src='images/sixth_preview.png' alt='How to host your Flask website for free.'>
+<hr class='my-f4'>
+<h1 class='display-6'> 4) Upload HTML File(s)</h1>
+<p class='lead'> Navigate back to the files section. The GUI on the left will show a folder called "my site". Navigate into this directory. Click the mysite directory.</p>
+<div> </div>
+<img src='images/seventh_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<img src='images/eigth_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<p class='lead' style="margin-top: 1em;"> Now that you are inside the "my-site" folder, you are now able to create files inside this folder. To complete the next step, you must create a folder called templates and inside that folder upload the HTMl files that you require.</p>
+<div> </div>
+<img src='images/ninth_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<img src='images/tenth_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<p class='lead' style='margin-top: 1em;'> Once navigated/clicked into the templates file you will be able to upload your HTML files.</p>
+<div> </div>
+<img src='images/eleventh_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<img src='images/sixth_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<hr class='my-f4' style='margin-top: 2em;'>
+<h1 class='display-6'> 5) Configure the WSGI Configuration File</h1>
+<div> </div>
+<p class='lead'> Navigate to the Web Tab and scroll down. View the image below to navigate to the WSGI Configuration file.</p>
+<div> </div>
+<img src='images/twelfth_preview.png' alt='How to host your Flask website for free.'>
+<div> </div>
+<p class='lead' style='margin-top: 1em; width: 55%;'> Once you have clicked on the file, you will be prompted to edit the file. When editing, change "flask_app" to the name of your Python file. In this case, we will be changing it to "app" because our Python file is "app.py".</p>
+<img src='images/thirteenth_preview.png' style='margin-top: 1em;' alt='How to host your Flask website for free.'>
+<div> </div>
+<p class='lead' style='margin-top: 1em;'> The underlined word is the word that should be changed from flask_app to the name of your Python application. If your python application is 'app.py', you must input 'app' in place of 'flask_app'.
+<div> </div>
+<hr class='my-f4'>
+<div> </div>
+<h1 class='display-6'> 6) Admire Your Work! </h1>
+<div> </div>
+<p class='lead'> Congratulations, your app is being hosted with PythonAnywhere! The URL that you have been given now leads to your website.
+</p>
+<div> </div>
+<hr class='my-f4'>
+<!-- <footer> How To Host Your Flask App For Free!</footer> -->
+</div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js""></script>
+
+</center>
+</body> 
